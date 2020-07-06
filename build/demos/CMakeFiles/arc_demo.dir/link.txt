@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/arc_demo.dir/arc_demo.cpp.o  -o arc_demo -rdynamic driver/libmatrix_creator_hal.so -lpthread -lfftw3f -lwiringPi -lwiringPiDev -lcrypt -Wl,-rpath,/home/pi/matrix-creator-hal/build/demos/driver 

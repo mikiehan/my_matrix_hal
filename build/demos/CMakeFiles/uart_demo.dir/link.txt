@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/uart_demo.dir/uart_demo.cpp.o  -o uart_demo -rdynamic driver/libmatrix_creator_hal.so -lpthread -lwiringPi -lwiringPiDev -lcrypt -lfftw3f -lwiringPi -lwiringPiDev -lcrypt -Wl,-rpath,/home/pi/matrix-creator-hal/build/demos/driver 

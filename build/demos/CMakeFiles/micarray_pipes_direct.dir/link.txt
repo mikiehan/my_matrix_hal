@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/micarray_pipes_direct.dir/micarray_pipes_direct.cpp.o  -o micarray_pipes_direct -rdynamic driver/libmatrix_creator_hal.so -lpthread -lwiringPi -lwiringPiDev -lcrypt -lfftw3f -lwiringPi -lwiringPiDev -lcrypt -Wl,-rpath,/home/pi/matrix-creator-hal/build/demos/driver 
