@@ -55,6 +55,23 @@ MicrophoneArray::MicrophoneArray(bool enable_beamforming)
 
 MicrophoneArray::~MicrophoneArray() {}
 
+MicrophoneArray::MicrophoneArray(float azimutal_angle, float polar_angle, 
+                                 float radial_distance_mm,
+                                 float sound_speed_mmseg,
+                                 int16_t gain, 
+                                 uint32_t sampling_rate)
+    : lock_(irq_m), gain_(gain), sampling_frequency_(sampling_rate) {
+  raw_data_.resize(kMicarrayBufferSize);
+
+  delayed_data_.resize(kMicarrayBufferSize);
+
+  fifos_.resize(kMicrophoneChannels);
+
+  beamformed_.resize(NumberOfSamples());
+
+  //CalculateDelays(azimutal_angle, polar_angle, radial_distance_mm, sound_speed_mmseg);
+}
+
 void MicrophoneArray::Setup(MatrixIOBus *bus) {
   MatrixDriver::Setup(bus);
 
@@ -114,23 +131,23 @@ void MicrophoneArray::CalculateDelays(float azimutal_angle, float polar_angle,
   z = radial_distance_mm * std::cos(azimutal_angle);
 
   std::map<float, int> distance_map;
-
+   
   // sorted distances from source position to each microphone
   for (int c = 0; c < kMicrophoneChannels; c++) {
     // Use Proper Micarray Location (Creator or Voice)
     float distance = 0;
-    if (MatrixLeds() == 18)
+    //if (MatrixLeds() == 18)
       distance = std::sqrt(std::pow(micarray_location_voice[c][0] - x, 2.0) +
                            std::pow(micarray_location_voice[c][1] - y, 2.0) +
                            std::pow(z, 2.0));
-    else
-      distance = std::sqrt(std::pow(micarray_location_creator[c][0] - x, 2.0) +
-                           std::pow(micarray_location_creator[c][1] - y, 2.0) +
-                           std::pow(z, 2.0));
+    //else
+    //  distance = std::sqrt(std::pow(micarray_location_creator[c][0] - x, 2.0) +
+    //                       std::pow(micarray_location_creator[c][1] - y, 2.0) +
+    //                       std::pow(z, 2.0));
 
     distance_map[distance] = c;
   }
-
+  
   // fifo resize for delay compensation
   float min_distance = distance_map.begin()->first;
   for (std::map<float, int>::iterator it = distance_map.begin();
@@ -139,6 +156,7 @@ void MicrophoneArray::CalculateDelays(float azimutal_angle, float polar_angle,
                            sound_speed_mmseg);
     fifos_[it->second].Resize(delay);
   }
+  
 }
 
 bool MicrophoneArray::GetGain() {

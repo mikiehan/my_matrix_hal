@@ -1,37 +1,30 @@
 /*
- * Microphone array record to file example
- * Channel 8 is beamforming output
+ * Copyright 2017 <Admobilize>
+ * All rights reserved.
+ * 
+ * Modified 8/17/19 by founta to record raw audio
  */
 
-/////////////////////////
-// INCLUDE STATEMENTS //
-///////////////////////
-
-// Google gflags parser
 #include <gflags/gflags.h>
-// Input/output stream class to operate on files
+#include <wiringPi.h>
+
 #include <fstream>
-// Input/output streams and functions
 #include <iostream>
-// Use strings
 #include <string>
-// Arrays for math operations
+#include <thread>
 #include <valarray>
 
-// Communicates with MATRIX device
+#include "../cpp/driver/everloop.h"
+#include "../cpp/driver/everloop_image.h"
 #include "../cpp/driver/matrixio_bus.h"
-// Interfaces with microphone array
 #include "../cpp/driver/microphone_array.h"
-// Enables using FIR filter with microphone array
 #include "../cpp/driver/microphone_core.h"
-
-////////////////////////
-// INITIAL VARIABLES //
-//////////////////////
-
-// Defines variables from user arguments using gflags utility
-// (https://gflags.github.io/gflags/)
-
+/*
+#include "matrix_hal/everloop.h"
+#include "matrix_hal/everloop_image.h"
+#include "matrix_hal/matrixio_bus.h"
+#include "matrix_hal/microphone_array.h"
+#include "matrix_hal/microphone_core.h" */
 // Grabs sampling frequency input from user
 DEFINE_int32(
     sampling_frequency, 16000,
@@ -54,19 +47,19 @@ DEFINE_double(distance, 1000.0, "Distance from User to Microphone in mm");  // A
 // Grabs file prefix  input from user
 DEFINE_string(prefix, "11k_21k_30", "Prefix for output file name");  // Argument example: "--prefix 11k_21k_30ms"
 
-int main(int argc, char *agrv[]) {
-  ////////////////////
-  // INITIAL SETUP //
-  //////////////////
+namespace hal = matrix_hal;
 
-  // Parse command line flags with gflags utility
-  // (https://gflags.github.io/gflags/)
+int main(int argc, char *agrv[]) {
   google::ParseCommandLineFlags(&argc, &agrv, true);
 
-  // Create MatrixIOBus object for hardware communication
-  matrix_hal::MatrixIOBus bus;
-  // Initialize bus and exit program if error occurs
+  hal::MatrixIOBus bus;
   if (!bus.Init()) return false;
+
+  if (!bus.IsDirectBus()) {
+    std::cerr << "Kernel Modules has been loaded. Use ALSA implementation "
+              << std::endl;
+    return false;
+  }
 
   // Set user flags from gflags as variables
   int sampling_rate = FLAGS_sampling_frequency;
@@ -75,20 +68,32 @@ int main(int argc, char *agrv[]) {
 
   float azimutal_angle = (float) FLAGS_azimutal_angle;
   float polar_angle = (float) FLAGS_polar_angle;
-  float distance_mm = (float) FLAGS_distance; 
+  float distance_mm = (float) FLAGS_distance;
   std::string prefix = FLAGS_prefix;
 
   std::cout << sampling_rate <<" " << seconds_to_record << " " << gain << " ";
   std::cout << azimutal_angle <<" " << polar_angle << " " << distance_mm << " ";
   std::cout << prefix << std::endl;
-  /////////////////
-  // MAIN SETUP //
-  ///////////////
-  
-  // Create MicrophoneArray object
-  //matrix_hal::MicrophoneArray microphone_array;
-  matrix_hal::MicrophoneArray microphone_array(azimutal_angle, polar_angle, distance_mm, 340 * 1000); 
+  std::cout << "hello" << std::endl;
+
+  // Microhone Array Configuration
+  hal::MicrophoneArray mics(azimutal_angle, polar_angle, distance_mm, 340 * 1000); //disable beamforming
+  std::cout << "after mics init" << std::endl;
+
+  /* 
+  mics.Setup(&bus);
+  mics.SetSamplingRate(sampling_rate);
+  if (FLAGS_gain > 0) mics.SetGain(FLAGS_gain);
+
+  mics.ShowConfiguration();
+  std::cout << "Duration : " << seconds_to_record << "s" << std::endl;
+
+  // Microphone Core Init
+  hal::MicrophoneCore mic_core(mics);
+  mic_core.Setup(&bus);
+
   // Set microphone_array to use MatrixIOBus bus
+  std::cout << "ddee " << std::endl;
   
   microphone_array.Setup(&bus);
   // Set microphone sampling rate
@@ -171,5 +176,6 @@ int main(int argc, char *agrv[]) {
       }
     }
   }
+  */
   return 0;
 }

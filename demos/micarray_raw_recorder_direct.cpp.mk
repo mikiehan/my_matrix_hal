@@ -81,14 +81,20 @@ int main(int argc, char *agrv[]) {
   std::cout << sampling_rate <<" " << seconds_to_record << " " << gain << " ";
   std::cout << azimutal_angle <<" " << polar_angle << " " << distance_mm << " ";
   std::cout << prefix << std::endl;
+  std::cout << "hello" << std::endl;
   /////////////////
   // MAIN SETUP //
   ///////////////
   
   // Create MicrophoneArray object
+  std::cout << "ddee " << std::endl;
   //matrix_hal::MicrophoneArray microphone_array;
-  matrix_hal::MicrophoneArray microphone_array(azimutal_angle, polar_angle, distance_mm, 340 * 1000); 
+  std::cout << "ddee " << std::endl;
+  matrix_hal::MicrophoneArray mics(azimutal_angle, polar_angle, distance_mm, 340 * 1000); 
+  std::cout << "after mics init" << std::endl;
+  /*
   // Set microphone_array to use MatrixIOBus bus
+  std::cout << "ddee " << std::endl;
   
   microphone_array.Setup(&bus);
   // Set microphone sampling rate
@@ -171,5 +177,6 @@ int main(int argc, char *agrv[]) {
       }
     }
   }
+  */
   return 0;
 }

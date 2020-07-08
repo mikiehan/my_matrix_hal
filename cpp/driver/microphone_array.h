@@ -40,7 +40,12 @@ const uint16_t kMicrophoneChannels = 8;
 class MicrophoneArray : public MatrixDriver {
  public:
   MicrophoneArray(bool enable_beamforming = true);
-
+  MicrophoneArray(float azimutal_angle, float polar_angle,
+                  float radial_distance_mm = 100.0,
+                  float sound_speed_mmseg = 340 * 1000.0,
+                  int16_t gain = 0,
+                  uint32_t sampling_rate = 48000);
+  
   ~MicrophoneArray();
 
   void Setup(MatrixIOBus *bus);
@@ -73,7 +78,7 @@ class MicrophoneArray : public MatrixDriver {
 
   void CalculateDelays(float azimutal_angle, float polar_angle,
                        float radial_distance_mm = 100.0,
-                       float sound_speed_mmseg = 320 * 1000.0);
+                       float sound_speed_mmseg = 340 * 1000.0);
 
  private:
   std::unique_lock<std::mutex> lock_;

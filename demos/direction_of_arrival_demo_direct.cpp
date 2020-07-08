@@ -29,6 +29,8 @@ namespace hal = matrix_hal;
 int led_offset[] = {23, 27, 32, 1, 6, 10, 14, 19};
 int lut[] = {1, 2, 10, 200, 10, 2, 1};
 
+typedef std::pair<float,float> pair;
+
 int main(int argc, char *agrv[]) {
   google::ParseCommandLineFlags(&argc, &agrv, true);
   int duration = 10;
@@ -96,5 +98,6 @@ int main(int argc, char *agrv[]) {
     }
     end = time(NULL);
   }
+
   return 0;
 }
