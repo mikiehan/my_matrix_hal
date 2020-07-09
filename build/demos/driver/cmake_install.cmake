@@ -78,6 +78,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
     "/home/pi/matrix-creator-hal/cpp/driver/bus_kernel.h"
     "/home/pi/matrix-creator-hal/cpp/driver/cross_correlation.h"
     "/home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival.h"
+    "/home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival_music.h"
     "/home/pi/matrix-creator-hal/cpp/driver/uart_control.h"
     "/home/pi/matrix-creator-hal/cpp/driver/audio_output.h"
     "/home/pi/matrix-creator-hal/cpp/driver/zwave_gpio.h"

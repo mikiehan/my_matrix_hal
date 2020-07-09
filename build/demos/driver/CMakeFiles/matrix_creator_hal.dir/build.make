@@ -393,9 +393,33 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o.provid
 demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o.provides.build: demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o
 
 
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: demos/driver/CMakeFiles/matrix_creator_hal.dir/flags.make
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/direction_of_arrival_music.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o"
+	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o -c /home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival_music.cpp
+
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.i"
+	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival_music.cpp > CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.i
+
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.s"
+	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival_music.cpp -o CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.s
+
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.requires:
+
+.PHONY : demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.requires
+
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.provides: demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.requires
+	$(MAKE) -f demos/driver/CMakeFiles/matrix_creator_hal.dir/build.make demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.provides.build
+.PHONY : demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.provides
+
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.provides.build: demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o
+
+
 demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o: demos/driver/CMakeFiles/matrix_creator_hal.dir/flags.make
 demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o: ../cpp/driver/uart_control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o"
 	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o -c /home/pi/matrix-creator-hal/cpp/driver/uart_control.cpp
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.i: cmake_force
@@ -419,7 +443,7 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o.provides.build
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o: demos/driver/CMakeFiles/matrix_creator_hal.dir/flags.make
 demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o: ../cpp/driver/audio_output.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o"
 	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o -c /home/pi/matrix-creator-hal/cpp/driver/audio_output.cpp
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.i: cmake_force
@@ -443,7 +467,7 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o.provides.build
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o: demos/driver/CMakeFiles/matrix_creator_hal.dir/flags.make
 demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o: ../cpp/driver/bus_direct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o"
 	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o -c /home/pi/matrix-creator-hal/cpp/driver/bus_direct.cpp
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.i: cmake_force
@@ -467,7 +491,7 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o.provides.build: 
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.o: demos/driver/CMakeFiles/matrix_creator_hal.dir/flags.make
 demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.o: ../cpp/driver/bus_kernel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.o"
 	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.o -c /home/pi/matrix-creator-hal/cpp/driver/bus_kernel.cpp
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.i: cmake_force
@@ -491,7 +515,7 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.o.provides.build: 
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/zwave_gpio.cpp.o: demos/driver/CMakeFiles/matrix_creator_hal.dir/flags.make
 demos/driver/CMakeFiles/matrix_creator_hal.dir/zwave_gpio.cpp.o: ../cpp/driver/zwave_gpio.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/zwave_gpio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object demos/driver/CMakeFiles/matrix_creator_hal.dir/zwave_gpio.cpp.o"
 	cd /home/pi/matrix-creator-hal/build/demos/driver && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_creator_hal.dir/zwave_gpio.cpp.o -c /home/pi/matrix-creator-hal/cpp/driver/zwave_gpio.cpp
 
 demos/driver/CMakeFiles/matrix_creator_hal.dir/zwave_gpio.cpp.i: cmake_force
@@ -529,6 +553,7 @@ matrix_creator_hal_OBJECTS = \
 "CMakeFiles/matrix_creator_hal.dir/matrixio_bus.cpp.o" \
 "CMakeFiles/matrix_creator_hal.dir/cross_correlation.cpp.o" \
 "CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o" \
+"CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o" \
 "CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o" \
 "CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o" \
 "CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o" \
@@ -552,6 +577,7 @@ demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_ha
 demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/matrixio_bus.cpp.o
 demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/cross_correlation.cpp.o
 demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o
+demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o
 demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o
 demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o
 demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o
@@ -563,7 +589,7 @@ demos/driver/libmatrix_creator_hal.so: /usr/lib/libwiringPi.so
 demos/driver/libmatrix_creator_hal.so: /usr/lib/libwiringPiDev.so
 demos/driver/libmatrix_creator_hal.so: /usr/lib/arm-linux-gnueabihf/libcrypt.so
 demos/driver/libmatrix_creator_hal.so: demos/driver/CMakeFiles/matrix_creator_hal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX shared library libmatrix_creator_hal.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library libmatrix_creator_hal.so"
 	cd /home/pi/matrix-creator-hal/build/demos/driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/matrix_creator_hal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -585,6 +611,7 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles
 demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles/matrix_creator_hal.dir/matrixio_bus.cpp.o.requires
 demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles/matrix_creator_hal.dir/cross_correlation.cpp.o.requires
 demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o.requires
+demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o.requires
 demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o.requires
 demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o.requires
 demos/driver/CMakeFiles/matrix_creator_hal.dir/requires: demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o.requires

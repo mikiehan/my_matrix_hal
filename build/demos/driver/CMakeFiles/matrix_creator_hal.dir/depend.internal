@@ -34,6 +34,20 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o
  ../cpp/driver/../../cpp/driver/direction_of_arrival.h
  ../cpp/driver/../../cpp/driver/microphone_array_location.h
  /home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival.cpp
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o
+ ../cpp/driver/../../cpp/driver/./././bus.h
+ ../cpp/driver/../../cpp/driver/././matrixio_bus.h
+ ../cpp/driver/../../cpp/driver/./circular_queue.h
+ ../cpp/driver/../../cpp/driver/./cross_correlation.h
+ ../cpp/driver/../../cpp/driver/./imu_data.h
+ ../cpp/driver/../../cpp/driver/./matrix_driver.h
+ ../cpp/driver/../../cpp/driver/./microphone_array.h
+ ../cpp/driver/../../cpp/driver/./pressure_data.h
+ ../cpp/driver/../../cpp/driver/cross_correlation.h
+ ../cpp/driver/../../cpp/driver/direction_of_arrival_music.h
+ ../cpp/driver/../../cpp/driver/microphone_array.h
+ ../cpp/driver/../../cpp/driver/microphone_array_location.h
+ /home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival_music.cpp
 demos/driver/CMakeFiles/matrix_creator_hal.dir/dummy_sensor.cpp.o
  ../cpp/driver/../../cpp/driver/./././bus.h
  ../cpp/driver/../../cpp/driver/././matrixio_bus.h

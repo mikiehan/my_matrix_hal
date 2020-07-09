@@ -109,9 +109,8 @@ int DirectionOfArrivalMusic::getAbsDiff(int index) {
 
 void DirectionOfArrivalMusic::Calculate() {
     //Create the Matrix
-    const uint16_t numCh = mics_.Channels();
-    const uint32_t numS = mics_.NumberOfSamples();
-    Matrix<MatrixC8by8f, numS, 1> musicFFTEachBinMatrix;
+    const uint16_t numCh = 8;
+    const uint32_t numS = 512;
     MatrixC8by8f musicFinalMatrix;
     
     for(int i = 0; i < snap_shots_; i++){
@@ -198,8 +197,8 @@ void DirectionOfArrivalMusic::Calculate() {
     
     if ( max > 0.05) {
         mic_direction_ = maxRow/45;
-        azimutal_angle_ = atan2(micarray_location[mic_direction_][1],
-                                micarray_location[mic_direction_][0]);
+        azimutal_angle_ = atan2(micarray_location_voice[mic_direction_][1],
+                                micarray_location_voice[mic_direction_][0]);
         //polar_angle_ = fabs(index) * M_PI / 2.0 / float(max_tof - 1);
     }
 }

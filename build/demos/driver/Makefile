@@ -304,6 +304,33 @@ direction_of_arrival.cpp.s:
 	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/driver/CMakeFiles/matrix_creator_hal.dir/build.make demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.s
 .PHONY : direction_of_arrival.cpp.s
 
+direction_of_arrival_music.o: direction_of_arrival_music.cpp.o
+
+.PHONY : direction_of_arrival_music.o
+
+# target to build an object file
+direction_of_arrival_music.cpp.o:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/driver/CMakeFiles/matrix_creator_hal.dir/build.make demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o
+.PHONY : direction_of_arrival_music.cpp.o
+
+direction_of_arrival_music.i: direction_of_arrival_music.cpp.i
+
+.PHONY : direction_of_arrival_music.i
+
+# target to preprocess a source file
+direction_of_arrival_music.cpp.i:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/driver/CMakeFiles/matrix_creator_hal.dir/build.make demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.i
+.PHONY : direction_of_arrival_music.cpp.i
+
+direction_of_arrival_music.s: direction_of_arrival_music.cpp.s
+
+.PHONY : direction_of_arrival_music.s
+
+# target to generate assembly for a file
+direction_of_arrival_music.cpp.s:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/driver/CMakeFiles/matrix_creator_hal.dir/build.make demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.s
+.PHONY : direction_of_arrival_music.cpp.s
+
 dummy_sensor.o: dummy_sensor.cpp.o
 
 .PHONY : dummy_sensor.o
@@ -710,6 +737,9 @@ help:
 	@echo "... direction_of_arrival.o"
 	@echo "... direction_of_arrival.i"
 	@echo "... direction_of_arrival.s"
+	@echo "... direction_of_arrival_music.o"
+	@echo "... direction_of_arrival_music.i"
+	@echo "... direction_of_arrival_music.s"
 	@echo "... dummy_sensor.o"
 	@echo "... dummy_sensor.i"
 	@echo "... dummy_sensor.s"

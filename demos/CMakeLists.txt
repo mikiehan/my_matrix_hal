@@ -134,6 +134,14 @@ add_executable(direction_of_arrival_demo_direct direction_of_arrival_demo_direct
   target_link_libraries(direction_of_arrival_demo_direct ${FFTW_LIBRARIES})
   target_link_libraries(direction_of_arrival_demo_direct ${GFLAGS_LIB})
 
+add_executable(direction_of_arrival_demo_direct_music direction_of_arrival_demo_direct_music.cpp)
+  set_property(TARGET direction_of_arrival_demo_direct_music PROPERTY CXX_STANDARD 11)
+  target_link_libraries(direction_of_arrival_demo_direct_music matrix_creator_hal)
+  target_link_libraries(direction_of_arrival_demo_direct_music ${CMAKE_THREAD_LIBS_INIT})
+  target_link_libraries(direction_of_arrival_demo_direct_music ${WIRINGPI_LIB} ${WIRINGPI_DEV_LIB} ${CRYPT_LIB})
+  target_link_libraries(direction_of_arrival_demo_direct_music ${FFTW_LIBRARIES})
+  target_link_libraries(direction_of_arrival_demo_direct_music ${GFLAGS_LIB})
+
 add_executable(uart_demo uart_demo.cpp)
   set_property(TARGET uart_demo PROPERTY CXX_STANDARD 11)
   target_link_libraries(uart_demo matrix_creator_hal)

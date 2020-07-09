@@ -363,6 +363,19 @@ direction_of_arrival_demo_direct/fast:
 .PHONY : direction_of_arrival_demo_direct/fast
 
 #=============================================================================
+# Target rules for targets named direction_of_arrival_demo_direct_music
+
+# Build rule for target.
+direction_of_arrival_demo_direct_music: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 direction_of_arrival_demo_direct_music
+.PHONY : direction_of_arrival_demo_direct_music
+
+# fast build rule for target.
+direction_of_arrival_demo_direct_music/fast:
+	$(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build
+.PHONY : direction_of_arrival_demo_direct_music/fast
+
+#=============================================================================
 # Target rules for targets named uv_demo
 
 # Build rule for target.
@@ -468,6 +481,7 @@ help:
 	@echo "... gpio_demo"
 	@echo "... firmware_info"
 	@echo "... direction_of_arrival_demo_direct"
+	@echo "... direction_of_arrival_demo_direct_music"
 	@echo "... uv_demo"
 	@echo "... mic_demo_direct"
 	@echo "... ipaddress_demo"

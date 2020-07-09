@@ -79,6 +79,7 @@ demos/all: demos/CMakeFiles/arc_demo.dir/all
 demos/all: demos/CMakeFiles/gpio_demo.dir/all
 demos/all: demos/CMakeFiles/firmware_info.dir/all
 demos/all: demos/CMakeFiles/direction_of_arrival_demo_direct.dir/all
+demos/all: demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/all
 demos/all: demos/CMakeFiles/uv_demo.dir/all
 demos/all: demos/CMakeFiles/mic_demo_direct.dir/all
 demos/all: demos/CMakeFiles/ipaddress_demo.dir/all
@@ -105,6 +106,7 @@ demos/clean: demos/CMakeFiles/arc_demo.dir/clean
 demos/clean: demos/CMakeFiles/gpio_demo.dir/clean
 demos/clean: demos/CMakeFiles/firmware_info.dir/clean
 demos/clean: demos/CMakeFiles/direction_of_arrival_demo_direct.dir/clean
+demos/clean: demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/clean
 demos/clean: demos/CMakeFiles/uv_demo.dir/clean
 demos/clean: demos/CMakeFiles/mic_demo_direct.dir/clean
 demos/clean: demos/CMakeFiles/ipaddress_demo.dir/clean
@@ -126,7 +128,7 @@ demos/preinstall: demos/driver/preinstall
 demos/CMakeFiles/mic_demo_fir_direct.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/mic_demo_fir_direct.dir/build.make demos/CMakeFiles/mic_demo_fir_direct.dir/depend
 	$(MAKE) -f demos/CMakeFiles/mic_demo_fir_direct.dir/build.make demos/CMakeFiles/mic_demo_fir_direct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=41,42 "Built target mic_demo_fir_direct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=44,45 "Built target mic_demo_fir_direct"
 .PHONY : demos/CMakeFiles/mic_demo_fir_direct.dir/all
 
 # Include target in all.
@@ -136,7 +138,7 @@ all: demos/CMakeFiles/mic_demo_fir_direct.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/mic_demo_fir_direct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/mic_demo_fir_direct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/mic_demo_fir_direct.dir/rule
@@ -163,7 +165,7 @@ clean: demos/CMakeFiles/mic_demo_fir_direct.dir/clean
 demos/CMakeFiles/sensors_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/sensors_demo.dir/build.make demos/CMakeFiles/sensors_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/sensors_demo.dir/build.make demos/CMakeFiles/sensors_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=53,54 "Built target sensors_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=56,57 "Built target sensors_demo"
 .PHONY : demos/CMakeFiles/sensors_demo.dir/all
 
 # Include target in all.
@@ -173,7 +175,7 @@ all: demos/CMakeFiles/sensors_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/sensors_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/sensors_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/sensors_demo.dir/rule
@@ -200,7 +202,7 @@ clean: demos/CMakeFiles/sensors_demo.dir/clean
 demos/CMakeFiles/micarray_recorder_direct.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/micarray_recorder_direct.dir/build.make demos/CMakeFiles/micarray_recorder_direct.dir/depend
 	$(MAKE) -f demos/CMakeFiles/micarray_recorder_direct.dir/build.make demos/CMakeFiles/micarray_recorder_direct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=49,50 "Built target micarray_recorder_direct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=52,53 "Built target micarray_recorder_direct"
 .PHONY : demos/CMakeFiles/micarray_recorder_direct.dir/all
 
 # Include target in all.
@@ -210,7 +212,7 @@ all: demos/CMakeFiles/micarray_recorder_direct.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/micarray_recorder_direct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/micarray_recorder_direct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/micarray_recorder_direct.dir/rule
@@ -237,7 +239,7 @@ clean: demos/CMakeFiles/micarray_recorder_direct.dir/clean
 demos/CMakeFiles/pwm_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/pwm_demo.dir/build.make demos/CMakeFiles/pwm_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/pwm_demo.dir/build.make demos/CMakeFiles/pwm_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=51,52 "Built target pwm_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=54,55 "Built target pwm_demo"
 .PHONY : demos/CMakeFiles/pwm_demo.dir/all
 
 # Include target in all.
@@ -247,7 +249,7 @@ all: demos/CMakeFiles/pwm_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/pwm_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/pwm_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/pwm_demo.dir/rule
@@ -274,7 +276,7 @@ clean: demos/CMakeFiles/pwm_demo.dir/clean
 demos/CMakeFiles/mic_energy_direct.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/mic_energy_direct.dir/build.make demos/CMakeFiles/mic_energy_direct.dir/depend
 	$(MAKE) -f demos/CMakeFiles/mic_energy_direct.dir/build.make demos/CMakeFiles/mic_energy_direct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=43,44 "Built target mic_energy_direct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=46,47 "Built target mic_energy_direct"
 .PHONY : demos/CMakeFiles/mic_energy_direct.dir/all
 
 # Include target in all.
@@ -284,7 +286,7 @@ all: demos/CMakeFiles/mic_energy_direct.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/mic_energy_direct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/mic_energy_direct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/mic_energy_direct.dir/rule
@@ -311,7 +313,7 @@ clean: demos/CMakeFiles/mic_energy_direct.dir/clean
 demos/CMakeFiles/everloop_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/everloop_demo.dir/build.make demos/CMakeFiles/everloop_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/everloop_demo.dir/build.make demos/CMakeFiles/everloop_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=9,10 "Built target everloop_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=11,12 "Built target everloop_demo"
 .PHONY : demos/CMakeFiles/everloop_demo.dir/all
 
 # Include target in all.
@@ -321,7 +323,7 @@ all: demos/CMakeFiles/everloop_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/everloop_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/everloop_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/everloop_demo.dir/rule
@@ -348,7 +350,7 @@ clean: demos/CMakeFiles/everloop_demo.dir/clean
 demos/CMakeFiles/micarray_raw_recorder_direct.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/micarray_raw_recorder_direct.dir/build.make demos/CMakeFiles/micarray_raw_recorder_direct.dir/depend
 	$(MAKE) -f demos/CMakeFiles/micarray_raw_recorder_direct.dir/build.make demos/CMakeFiles/micarray_raw_recorder_direct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=47,48 "Built target micarray_raw_recorder_direct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=50,51 "Built target micarray_raw_recorder_direct"
 .PHONY : demos/CMakeFiles/micarray_raw_recorder_direct.dir/all
 
 # Include target in all.
@@ -358,7 +360,7 @@ all: demos/CMakeFiles/micarray_raw_recorder_direct.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/micarray_raw_recorder_direct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/micarray_raw_recorder_direct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/micarray_raw_recorder_direct.dir/rule
@@ -385,7 +387,7 @@ clean: demos/CMakeFiles/micarray_raw_recorder_direct.dir/clean
 demos/CMakeFiles/ir_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/ir_demo.dir/build.make demos/CMakeFiles/ir_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/ir_demo.dir/build.make demos/CMakeFiles/ir_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=17,18 "Built target ir_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=19,20 "Built target ir_demo"
 .PHONY : demos/CMakeFiles/ir_demo.dir/all
 
 # Include target in all.
@@ -395,7 +397,7 @@ all: demos/CMakeFiles/ir_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/ir_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/ir_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/ir_demo.dir/rule
@@ -422,7 +424,7 @@ clean: demos/CMakeFiles/ir_demo.dir/clean
 demos/CMakeFiles/servo_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/servo_demo.dir/build.make demos/CMakeFiles/servo_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/servo_demo.dir/build.make demos/CMakeFiles/servo_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=57,58 "Built target servo_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=60,61 "Built target servo_demo"
 .PHONY : demos/CMakeFiles/servo_demo.dir/all
 
 # Include target in all.
@@ -432,7 +434,7 @@ all: demos/CMakeFiles/servo_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/servo_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/servo_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/servo_demo.dir/rule
@@ -469,7 +471,7 @@ all: demos/CMakeFiles/audio_output.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/audio_output.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/audio_output.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/audio_output.dir/rule
@@ -506,7 +508,7 @@ all: demos/CMakeFiles/compass_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/compass_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/compass_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/compass_demo.dir/rule
@@ -533,7 +535,7 @@ clean: demos/CMakeFiles/compass_demo.dir/clean
 demos/CMakeFiles/micarray_pipes_direct.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/micarray_pipes_direct.dir/build.make demos/CMakeFiles/micarray_pipes_direct.dir/depend
 	$(MAKE) -f demos/CMakeFiles/micarray_pipes_direct.dir/build.make demos/CMakeFiles/micarray_pipes_direct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=45,46 "Built target micarray_pipes_direct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=48,49 "Built target micarray_pipes_direct"
 .PHONY : demos/CMakeFiles/micarray_pipes_direct.dir/all
 
 # Include target in all.
@@ -543,7 +545,7 @@ all: demos/CMakeFiles/micarray_pipes_direct.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/micarray_pipes_direct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/micarray_pipes_direct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/micarray_pipes_direct.dir/rule
@@ -580,7 +582,7 @@ all: demos/CMakeFiles/arc_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/arc_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/arc_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/arc_demo.dir/rule
@@ -607,7 +609,7 @@ clean: demos/CMakeFiles/arc_demo.dir/clean
 demos/CMakeFiles/gpio_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/gpio_demo.dir/build.make demos/CMakeFiles/gpio_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/gpio_demo.dir/build.make demos/CMakeFiles/gpio_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=13,14 "Built target gpio_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=15,16 "Built target gpio_demo"
 .PHONY : demos/CMakeFiles/gpio_demo.dir/all
 
 # Include target in all.
@@ -617,7 +619,7 @@ all: demos/CMakeFiles/gpio_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/gpio_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/gpio_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/gpio_demo.dir/rule
@@ -644,7 +646,7 @@ clean: demos/CMakeFiles/gpio_demo.dir/clean
 demos/CMakeFiles/firmware_info.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/firmware_info.dir/build.make demos/CMakeFiles/firmware_info.dir/depend
 	$(MAKE) -f demos/CMakeFiles/firmware_info.dir/build.make demos/CMakeFiles/firmware_info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=11,12 "Built target firmware_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=13,14 "Built target firmware_info"
 .PHONY : demos/CMakeFiles/firmware_info.dir/all
 
 # Include target in all.
@@ -654,7 +656,7 @@ all: demos/CMakeFiles/firmware_info.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/firmware_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/firmware_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/firmware_info.dir/rule
@@ -691,7 +693,7 @@ all: demos/CMakeFiles/direction_of_arrival_demo_direct.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/direction_of_arrival_demo_direct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/direction_of_arrival_demo_direct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/direction_of_arrival_demo_direct.dir/rule
@@ -712,13 +714,50 @@ clean: demos/CMakeFiles/direction_of_arrival_demo_direct.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir
+
+# All Build rule for target.
+demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
+	$(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/depend
+	$(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=9,10 "Built target direction_of_arrival_demo_direct_music"
+.PHONY : demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/all
+
+# Include target in all.
+all: demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
+	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
+.PHONY : demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/rule
+
+# Convenience name for target.
+direction_of_arrival_demo_direct_music: demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/rule
+
+.PHONY : direction_of_arrival_demo_direct_music
+
+# clean rule for target.
+demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/clean:
+	$(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/clean
+.PHONY : demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/clean
+
+# clean rule for target.
+clean: demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target demos/CMakeFiles/uv_demo.dir
 
 # All Build rule for target.
 demos/CMakeFiles/uv_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/uv_demo.dir/build.make demos/CMakeFiles/uv_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/uv_demo.dir/build.make demos/CMakeFiles/uv_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=61,62 "Built target uv_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=64,65 "Built target uv_demo"
 .PHONY : demos/CMakeFiles/uv_demo.dir/all
 
 # Include target in all.
@@ -728,7 +767,7 @@ all: demos/CMakeFiles/uv_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/uv_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/uv_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/uv_demo.dir/rule
@@ -755,7 +794,7 @@ clean: demos/CMakeFiles/uv_demo.dir/clean
 demos/CMakeFiles/mic_demo_direct.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/mic_demo_direct.dir/build.make demos/CMakeFiles/mic_demo_direct.dir/depend
 	$(MAKE) -f demos/CMakeFiles/mic_demo_direct.dir/build.make demos/CMakeFiles/mic_demo_direct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=39,40 "Built target mic_demo_direct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=42,43 "Built target mic_demo_direct"
 .PHONY : demos/CMakeFiles/mic_demo_direct.dir/all
 
 # Include target in all.
@@ -765,7 +804,7 @@ all: demos/CMakeFiles/mic_demo_direct.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/mic_demo_direct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/mic_demo_direct.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/mic_demo_direct.dir/rule
@@ -792,7 +831,7 @@ clean: demos/CMakeFiles/mic_demo_direct.dir/clean
 demos/CMakeFiles/ipaddress_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/ipaddress_demo.dir/build.make demos/CMakeFiles/ipaddress_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/ipaddress_demo.dir/build.make demos/CMakeFiles/ipaddress_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=15,16 "Built target ipaddress_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=17,18 "Built target ipaddress_demo"
 .PHONY : demos/CMakeFiles/ipaddress_demo.dir/all
 
 # Include target in all.
@@ -802,7 +841,7 @@ all: demos/CMakeFiles/ipaddress_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/ipaddress_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/ipaddress_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/ipaddress_demo.dir/rule
@@ -829,7 +868,7 @@ clean: demos/CMakeFiles/ipaddress_demo.dir/clean
 demos/CMakeFiles/sensors_status.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/sensors_status.dir/build.make demos/CMakeFiles/sensors_status.dir/depend
 	$(MAKE) -f demos/CMakeFiles/sensors_status.dir/build.make demos/CMakeFiles/sensors_status.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=55,56 "Built target sensors_status"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=58,59 "Built target sensors_status"
 .PHONY : demos/CMakeFiles/sensors_status.dir/all
 
 # Include target in all.
@@ -839,7 +878,7 @@ all: demos/CMakeFiles/sensors_status.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/sensors_status.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/sensors_status.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/sensors_status.dir/rule
@@ -866,7 +905,7 @@ clean: demos/CMakeFiles/sensors_status.dir/clean
 demos/CMakeFiles/uart_demo.dir/all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(MAKE) -f demos/CMakeFiles/uart_demo.dir/build.make demos/CMakeFiles/uart_demo.dir/depend
 	$(MAKE) -f demos/CMakeFiles/uart_demo.dir/build.make demos/CMakeFiles/uart_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=59,60 "Built target uart_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=62,63 "Built target uart_demo"
 .PHONY : demos/CMakeFiles/uart_demo.dir/all
 
 # Include target in all.
@@ -876,7 +915,7 @@ all: demos/CMakeFiles/uart_demo.dir/all
 
 # Build rule for subdir invocation for target.
 demos/CMakeFiles/uart_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/uart_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/CMakeFiles/uart_demo.dir/rule
@@ -921,7 +960,7 @@ demos/driver/preinstall:
 demos/driver/CMakeFiles/matrix_creator_hal.dir/all:
 	$(MAKE) -f demos/driver/CMakeFiles/matrix_creator_hal.dir/build.make demos/driver/CMakeFiles/matrix_creator_hal.dir/depend
 	$(MAKE) -f demos/driver/CMakeFiles/matrix_creator_hal.dir/build.make demos/driver/CMakeFiles/matrix_creator_hal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38 "Built target matrix_creator_hal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/matrix-creator-hal/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target matrix_creator_hal"
 .PHONY : demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 
 # Include target in all.
@@ -931,7 +970,7 @@ all: demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 
 # Build rule for subdir invocation for target.
 demos/driver/CMakeFiles/matrix_creator_hal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 21
 	$(MAKE) -f CMakeFiles/Makefile2 demos/driver/CMakeFiles/matrix_creator_hal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/matrix-creator-hal/build/CMakeFiles 0
 .PHONY : demos/driver/CMakeFiles/matrix_creator_hal.dir/rule

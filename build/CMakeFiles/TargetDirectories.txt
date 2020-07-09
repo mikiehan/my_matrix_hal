@@ -6,7 +6,6 @@
 /home/pi/matrix-creator-hal/build/CMakeFiles/install/local.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/edit_cache.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/rebuild_cache.dir
-/home/pi/matrix-creator-hal/build/demos/CMakeFiles/list_install_components.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/install.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/mic_demo_fir_direct.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/sensors_demo.dir
@@ -26,6 +25,8 @@
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/gpio_demo.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/firmware_info.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/direction_of_arrival_demo_direct.dir
+/home/pi/matrix-creator-hal/build/demos/CMakeFiles/list_install_components.dir
+/home/pi/matrix-creator-hal/build/demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/uv_demo.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/mic_demo_direct.dir
 /home/pi/matrix-creator-hal/build/demos/CMakeFiles/ipaddress_demo.dir

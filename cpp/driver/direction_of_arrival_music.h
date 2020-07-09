@@ -52,7 +52,7 @@ class DirectionOfArrivalMusic {
   uint16_t mic_direction_;
   float azimutal_angle_;
   float polar_angle_;
-  int snap_shots; //added for music
+  int snap_shots_; //added for music
   int file_count_; //added for music
 };
 };      // namespace matrix_hal

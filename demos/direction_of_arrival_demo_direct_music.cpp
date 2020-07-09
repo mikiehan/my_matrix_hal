@@ -52,7 +52,7 @@ int main(int argc, char *agrv[]) {
 
   hal::EverloopImage image1d(bus.MatrixLeds());
 
-  hal::MicrophoneArray mics(false);
+  hal::MicrophoneArray mics;
   mics.Setup(&bus);
   mics.SetSamplingRate(sampling_rate);
   mics.ShowConfiguration();

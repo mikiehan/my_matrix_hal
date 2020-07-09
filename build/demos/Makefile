@@ -78,16 +78,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -121,6 +111,16 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -395,6 +395,21 @@ direction_of_arrival_demo_direct/fast:
 .PHONY : direction_of_arrival_demo_direct/fast
 
 # Convenience name for target.
+demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/rule:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/rule
+.PHONY : demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/rule
+
+# Convenience name for target.
+direction_of_arrival_demo_direct_music: demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/rule
+
+.PHONY : direction_of_arrival_demo_direct_music
+
+# fast build rule for target.
+direction_of_arrival_demo_direct_music/fast:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build
+.PHONY : direction_of_arrival_demo_direct_music/fast
+
+# Convenience name for target.
 demos/CMakeFiles/uv_demo.dir/rule:
 	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f CMakeFiles/Makefile2 demos/CMakeFiles/uv_demo.dir/rule
 .PHONY : demos/CMakeFiles/uv_demo.dir/rule
@@ -576,6 +591,33 @@ direction_of_arrival_demo_direct.s: direction_of_arrival_demo_direct.cpp.s
 direction_of_arrival_demo_direct.cpp.s:
 	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct.dir/direction_of_arrival_demo_direct.cpp.s
 .PHONY : direction_of_arrival_demo_direct.cpp.s
+
+direction_of_arrival_demo_direct_music.o: direction_of_arrival_demo_direct_music.cpp.o
+
+.PHONY : direction_of_arrival_demo_direct_music.o
+
+# target to build an object file
+direction_of_arrival_demo_direct_music.cpp.o:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/direction_of_arrival_demo_direct_music.cpp.o
+.PHONY : direction_of_arrival_demo_direct_music.cpp.o
+
+direction_of_arrival_demo_direct_music.i: direction_of_arrival_demo_direct_music.cpp.i
+
+.PHONY : direction_of_arrival_demo_direct_music.i
+
+# target to preprocess a source file
+direction_of_arrival_demo_direct_music.cpp.i:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/direction_of_arrival_demo_direct_music.cpp.i
+.PHONY : direction_of_arrival_demo_direct_music.cpp.i
+
+direction_of_arrival_demo_direct_music.s: direction_of_arrival_demo_direct_music.cpp.s
+
+.PHONY : direction_of_arrival_demo_direct_music.s
+
+# target to generate assembly for a file
+direction_of_arrival_demo_direct_music.cpp.s:
+	cd /home/pi/matrix-creator-hal/build && $(MAKE) -f demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/build.make demos/CMakeFiles/direction_of_arrival_demo_direct_music.dir/direction_of_arrival_demo_direct_music.cpp.s
+.PHONY : direction_of_arrival_demo_direct_music.cpp.s
 
 everloop_demo.o: everloop_demo.cpp.o
 
@@ -1044,7 +1086,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... mic_demo_fir_direct"
 	@echo "... sensors_demo"
@@ -1064,6 +1105,8 @@ help:
 	@echo "... gpio_demo"
 	@echo "... firmware_info"
 	@echo "... direction_of_arrival_demo_direct"
+	@echo "... list_install_components"
+	@echo "... direction_of_arrival_demo_direct_music"
 	@echo "... uv_demo"
 	@echo "... mic_demo_direct"
 	@echo "... ipaddress_demo"
@@ -1081,6 +1124,9 @@ help:
 	@echo "... direction_of_arrival_demo_direct.o"
 	@echo "... direction_of_arrival_demo_direct.i"
 	@echo "... direction_of_arrival_demo_direct.s"
+	@echo "... direction_of_arrival_demo_direct_music.o"
+	@echo "... direction_of_arrival_demo_direct_music.i"
+	@echo "... direction_of_arrival_demo_direct_music.s"
 	@echo "... everloop_demo.o"
 	@echo "... everloop_demo.i"
 	@echo "... everloop_demo.s"

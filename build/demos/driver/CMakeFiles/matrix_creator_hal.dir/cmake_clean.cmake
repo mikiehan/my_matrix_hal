@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/matrix_creator_hal.dir/matrixio_bus.cpp.o"
   "CMakeFiles/matrix_creator_hal.dir/cross_correlation.cpp.o"
   "CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o"
+  "CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o"
   "CMakeFiles/matrix_creator_hal.dir/uart_control.cpp.o"
   "CMakeFiles/matrix_creator_hal.dir/audio_output.cpp.o"
   "CMakeFiles/matrix_creator_hal.dir/bus_direct.cpp.o"

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pi/matrix-creator-hal/cpp/driver/bus_kernel.cpp" "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/bus_kernel.cpp.o"
   "/home/pi/matrix-creator-hal/cpp/driver/cross_correlation.cpp" "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/cross_correlation.cpp.o"
   "/home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival.cpp" "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o"
+  "/home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival_music.cpp" "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o"
   "/home/pi/matrix-creator-hal/cpp/driver/dummy_sensor.cpp" "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/dummy_sensor.cpp.o"
   "/home/pi/matrix-creator-hal/cpp/driver/everloop.cpp" "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/everloop.cpp.o"
   "/home/pi/matrix-creator-hal/cpp/driver/gpio_control.cpp" "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/gpio_control.cpp.o"

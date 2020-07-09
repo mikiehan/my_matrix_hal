@@ -9,6 +9,7 @@ FIND_LIBRARY(WIRINGPI_DEV_LIB NAMES wiringPiDev)
 FIND_LIBRARY(CRYPT_LIB NAMES crypt)
 
 add_compile_options(-std=c++11)
+add_compile_options(-I/usr/local/include/eigen-3.3.7)
 
 # Enable extra warnings. Not needed.
 include (../../cmake/FatalWarnings.cmake)
@@ -35,6 +36,7 @@ set(matrix_creator_hal_src
   matrixio_bus.cpp
   cross_correlation.cpp
   direction_of_arrival.cpp
+  direction_of_arrival_music.cpp
   uart_control.cpp
   audio_output.cpp
   bus_direct.cpp
@@ -77,6 +79,7 @@ set (matrix_creator_hal_headers
   bus_kernel.h
   cross_correlation.h
   direction_of_arrival.h
+  direction_of_arrival_music.h
   uart_control.h
   audio_output.h
   zwave_gpio.h

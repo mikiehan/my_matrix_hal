@@ -34,6 +34,20 @@ demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o: ../cp
 demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o: ../cpp/driver/../../cpp/driver/microphone_array_location.h
 demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival.cpp.o: ../cpp/driver/direction_of_arrival.cpp
 
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/./././bus.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/././matrixio_bus.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/./circular_queue.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/./cross_correlation.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/./imu_data.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/./matrix_driver.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/./microphone_array.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/./pressure_data.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/cross_correlation.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/direction_of_arrival_music.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/microphone_array.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/../../cpp/driver/microphone_array_location.h
+demos/driver/CMakeFiles/matrix_creator_hal.dir/direction_of_arrival_music.cpp.o: ../cpp/driver/direction_of_arrival_music.cpp
+
 demos/driver/CMakeFiles/matrix_creator_hal.dir/dummy_sensor.cpp.o: ../cpp/driver/../../cpp/driver/./././bus.h
 demos/driver/CMakeFiles/matrix_creator_hal.dir/dummy_sensor.cpp.o: ../cpp/driver/../../cpp/driver/././matrixio_bus.h
 demos/driver/CMakeFiles/matrix_creator_hal.dir/dummy_sensor.cpp.o: ../cpp/driver/../../cpp/driver/./dummy_data.h
