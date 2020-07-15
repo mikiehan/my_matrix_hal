@@ -61,6 +61,7 @@ MicrophoneArray::MicrophoneArray(float azimutal_angle, float polar_angle,
                                  int16_t gain, 
                                  uint32_t sampling_rate)
     : lock_(irq_m), gain_(gain), sampling_frequency_(sampling_rate) {
+  enable_beamforming_ = true;
   raw_data_.resize(kMicarrayBufferSize);
 
   delayed_data_.resize(kMicarrayBufferSize);

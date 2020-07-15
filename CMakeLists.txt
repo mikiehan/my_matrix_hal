@@ -6,5 +6,5 @@ include (cmake/FatalWarnings.cmake)
 ADM_EXTRA_WARNINGS()
 
 add_subdirectory(demos)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I/usr/local/include/eigen-3.3.7")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -I/usr/local/include/eigen-3.3.7")
 

@@ -79,7 +79,7 @@ bool DirectionOfArrivalMusic::Init() {
     mic_direction_ = 0;
     azimutal_angle_ = 0;
     polar_angle_ = 0;
-    snap_shots_ = 125.0; // 1000 ms of data
+    snap_shots_ = (int)(mics_.SamplingRate()/mics_.NumberOfSamples())+1; // 125.0; // 1000 ms of data
     file_count_ = 0.0;
     for (uint16_t c = 0; c < mics_.Channels(); c++) {
         buffer_2D_[c] = &buffer_1D_[c * mics_.NumberOfSamples()];
@@ -90,11 +90,13 @@ bool DirectionOfArrivalMusic::Init() {
 
 void DirectionOfArrivalMusic::steeringVectorCalculate(){
     const complex<double> l(0,1);
+    const float radius_matrix_voice = 0.0383; // use 0.054 for matrix creator
     for(int i = 0 ; i < 360 ; i ++){
         MatrixC8by1f steeringVec_;
         for(int j = 0 ; j < 8 ; j++){
-            steeringVec_(j,0) = std::exp(l*( ((2*PI*mics_.SamplingRate()*0.054)/335.0)*
-                                            cos( (i*PI/180.0- (2*PI*PI*j)/(8.0*180.0)) ) ) );
+            steeringVec_(j,0) = std::exp(l*( ((2*PI*mics_.SamplingRate()*radius_matrix_voice)/340.0)*
+                                            //cos( (i*PI/180.0- (2*PI*PI*j)/(8.0*180.0)) ) ) );
+                                            cos( (i*PI/180.0- (2*PI*j)/(8.0)) ) ) );
         }
         steeringVector_(i,0) = MatrixC8by1f(steeringVec_);
     }

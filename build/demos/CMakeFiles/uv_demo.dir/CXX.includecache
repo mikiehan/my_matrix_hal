@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/matrix-creator-hal/cpp/driver/./bus.h
+/home/pi/my_matrix_hal/cpp/driver/./bus.h
 stdint.h
 -
 mutex
@@ -14,23 +14,23 @@ mutex
 string
 -
 
-/home/pi/matrix-creator-hal/cpp/driver/./everloop_image.h
+/home/pi/my_matrix_hal/cpp/driver/./everloop_image.h
 cstdint
 -
 vector
 -
 ./matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/././matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/././matrixio_bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/./matrix_driver.h
+/home/pi/my_matrix_hal/cpp/driver/./matrix_driver.h
 memory
 -
 string
 -
 ./matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/././matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/././matrixio_bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/./matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/./matrixio_bus.h
 stdint.h
 -
 mutex
@@ -38,27 +38,27 @@ mutex
 string
 -
 ./bus.h
-/home/pi/matrix-creator-hal/cpp/driver/././bus.h
+/home/pi/my_matrix_hal/cpp/driver/././bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/./uv_data.h
+/home/pi/my_matrix_hal/cpp/driver/./uv_data.h
 
-/home/pi/matrix-creator-hal/cpp/driver/everloop.h
+/home/pi/my_matrix_hal/cpp/driver/everloop.h
 string
 -
 ./everloop_image.h
-/home/pi/matrix-creator-hal/cpp/driver/./everloop_image.h
+/home/pi/my_matrix_hal/cpp/driver/./everloop_image.h
 ./matrix_driver.h
-/home/pi/matrix-creator-hal/cpp/driver/./matrix_driver.h
+/home/pi/my_matrix_hal/cpp/driver/./matrix_driver.h
 
-/home/pi/matrix-creator-hal/cpp/driver/everloop_image.h
+/home/pi/my_matrix_hal/cpp/driver/everloop_image.h
 cstdint
 -
 vector
 -
 ./matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/./matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/./matrixio_bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/matrixio_bus.h
 stdint.h
 -
 mutex
@@ -66,19 +66,19 @@ mutex
 string
 -
 ./bus.h
-/home/pi/matrix-creator-hal/cpp/driver/./bus.h
+/home/pi/my_matrix_hal/cpp/driver/./bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/uv_data.h
+/home/pi/my_matrix_hal/cpp/driver/uv_data.h
 
-/home/pi/matrix-creator-hal/cpp/driver/uv_sensor.h
+/home/pi/my_matrix_hal/cpp/driver/uv_sensor.h
 string
 -
 ./matrix_driver.h
-/home/pi/matrix-creator-hal/cpp/driver/./matrix_driver.h
+/home/pi/my_matrix_hal/cpp/driver/./matrix_driver.h
 ./uv_data.h
-/home/pi/matrix-creator-hal/cpp/driver/./uv_data.h
+/home/pi/my_matrix_hal/cpp/driver/./uv_data.h
 
-/home/pi/matrix-creator-hal/demos/uv_demo.cpp
+/home/pi/my_matrix_hal/demos/uv_demo.cpp
 unistd.h
 -
 cstdlib
@@ -88,13 +88,13 @@ iostream
 valarray
 -
 ../cpp/driver/everloop.h
-/home/pi/matrix-creator-hal/cpp/driver/everloop.h
+/home/pi/my_matrix_hal/cpp/driver/everloop.h
 ../cpp/driver/everloop_image.h
-/home/pi/matrix-creator-hal/cpp/driver/everloop_image.h
+/home/pi/my_matrix_hal/cpp/driver/everloop_image.h
 ../cpp/driver/matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/matrixio_bus.h
 ../cpp/driver/uv_data.h
-/home/pi/matrix-creator-hal/cpp/driver/uv_data.h
+/home/pi/my_matrix_hal/cpp/driver/uv_data.h
 ../cpp/driver/uv_sensor.h
-/home/pi/matrix-creator-hal/cpp/driver/uv_sensor.h
+/home/pi/my_matrix_hal/cpp/driver/uv_sensor.h
 

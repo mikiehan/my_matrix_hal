@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/gpio_demo.dir/gpio_demo.cpp.o  -o gpio_demo -rdynamic driver/libmatrix_creator_hal.so -lpthread -lfftw3f -lwiringPi -lwiringPiDev -lcrypt -Wl,-rpath,/home/pi/matrix-creator-hal/build/demos/driver 
+/usr/bin/c++    -rdynamic CMakeFiles/gpio_demo.dir/gpio_demo.cpp.o  -o gpio_demo -Wl,-rpath,/home/pi/my_matrix_hal/build/demos/driver driver/libmatrix_creator_hal.so -lpthread -lfftw3f -lwiringPi -lwiringPiDev -lcrypt 

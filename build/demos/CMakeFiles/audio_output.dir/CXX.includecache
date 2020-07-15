@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/matrix-creator-hal/cpp/driver/././matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/././matrixio_bus.h
 stdint.h
 -
 mutex
@@ -14,9 +14,9 @@ mutex
 string
 -
 ./bus.h
-/home/pi/matrix-creator-hal/cpp/driver/./././bus.h
+/home/pi/my_matrix_hal/cpp/driver/./././bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/./bus.h
+/home/pi/my_matrix_hal/cpp/driver/./bus.h
 stdint.h
 -
 mutex
@@ -24,21 +24,21 @@ mutex
 string
 -
 
-/home/pi/matrix-creator-hal/cpp/driver/./matrix_driver.h
+/home/pi/my_matrix_hal/cpp/driver/./matrix_driver.h
 memory
 -
 string
 -
 ./matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/././matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/././matrixio_bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/audio_output.h
+/home/pi/my_matrix_hal/cpp/driver/audio_output.h
 string
 -
 ./matrix_driver.h
-/home/pi/matrix-creator-hal/cpp/driver/./matrix_driver.h
+/home/pi/my_matrix_hal/cpp/driver/./matrix_driver.h
 
-/home/pi/matrix-creator-hal/cpp/driver/matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/matrixio_bus.h
 stdint.h
 -
 mutex
@@ -46,9 +46,9 @@ mutex
 string
 -
 ./bus.h
-/home/pi/matrix-creator-hal/cpp/driver/./bus.h
+/home/pi/my_matrix_hal/cpp/driver/./bus.h
 
-/home/pi/matrix-creator-hal/demos/audio_output.cpp
+/home/pi/my_matrix_hal/demos/audio_output.cpp
 gflags/gflags.h
 -
 fstream
@@ -58,7 +58,7 @@ iostream
 valarray
 -
 ../cpp/driver/audio_output.h
-/home/pi/matrix-creator-hal/cpp/driver/audio_output.h
+/home/pi/my_matrix_hal/cpp/driver/audio_output.h
 ../cpp/driver/matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/matrixio_bus.h
 

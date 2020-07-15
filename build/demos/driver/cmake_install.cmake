@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/matrix-creator-hal/cpp/driver
+# Install script for directory: /home/pi/my_matrix_hal/cpp/driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,14 +32,19 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmatrix_creator_hal.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmatrix_creator_hal.so")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmatrix_creator_hal.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/pi/matrix-creator-hal/build/demos/driver/libmatrix_creator_hal.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/pi/my_matrix_hal/build/demos/driver/libmatrix_creator_hal.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmatrix_creator_hal.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmatrix_creator_hal.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -48,40 +53,43 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
   endif()
 endif()
 
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/matrix_hal" TYPE FILE FILES
-    "/home/pi/matrix-creator-hal/cpp/driver/circular_queue.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/creator_memory_map.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/dummy_data.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/dummy_sensor.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/everloop.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/everloop_image.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/fw_data.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/gpio_control.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/humidity_data.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/humidity_sensor.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/imu_data.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/imu_sensor.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/matrix_driver.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/mcu_firmware.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/microphone_array.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/microphone_core.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/microphone_core_fir.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/microphone_array_location.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/pressure_data.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/pressure_sensor.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/uv_data.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/uv_sensor.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/matrixio_bus.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/bus.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/bus_direct.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/bus_kernel.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/cross_correlation.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/direction_of_arrival_music.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/uart_control.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/audio_output.h"
-    "/home/pi/matrix-creator-hal/cpp/driver/zwave_gpio.h"
+    "/home/pi/my_matrix_hal/cpp/driver/circular_queue.h"
+    "/home/pi/my_matrix_hal/cpp/driver/creator_memory_map.h"
+    "/home/pi/my_matrix_hal/cpp/driver/dummy_data.h"
+    "/home/pi/my_matrix_hal/cpp/driver/dummy_sensor.h"
+    "/home/pi/my_matrix_hal/cpp/driver/everloop.h"
+    "/home/pi/my_matrix_hal/cpp/driver/everloop_image.h"
+    "/home/pi/my_matrix_hal/cpp/driver/fw_data.h"
+    "/home/pi/my_matrix_hal/cpp/driver/gpio_control.h"
+    "/home/pi/my_matrix_hal/cpp/driver/humidity_data.h"
+    "/home/pi/my_matrix_hal/cpp/driver/humidity_sensor.h"
+    "/home/pi/my_matrix_hal/cpp/driver/imu_data.h"
+    "/home/pi/my_matrix_hal/cpp/driver/imu_sensor.h"
+    "/home/pi/my_matrix_hal/cpp/driver/matrix_driver.h"
+    "/home/pi/my_matrix_hal/cpp/driver/mcu_firmware.h"
+    "/home/pi/my_matrix_hal/cpp/driver/microphone_array.h"
+    "/home/pi/my_matrix_hal/cpp/driver/microphone_core.h"
+    "/home/pi/my_matrix_hal/cpp/driver/microphone_core_fir.h"
+    "/home/pi/my_matrix_hal/cpp/driver/microphone_array_location.h"
+    "/home/pi/my_matrix_hal/cpp/driver/pressure_data.h"
+    "/home/pi/my_matrix_hal/cpp/driver/pressure_sensor.h"
+    "/home/pi/my_matrix_hal/cpp/driver/uv_data.h"
+    "/home/pi/my_matrix_hal/cpp/driver/uv_sensor.h"
+    "/home/pi/my_matrix_hal/cpp/driver/matrixio_bus.h"
+    "/home/pi/my_matrix_hal/cpp/driver/bus.h"
+    "/home/pi/my_matrix_hal/cpp/driver/bus_direct.h"
+    "/home/pi/my_matrix_hal/cpp/driver/bus_kernel.h"
+    "/home/pi/my_matrix_hal/cpp/driver/cross_correlation.h"
+    "/home/pi/my_matrix_hal/cpp/driver/direction_of_arrival.h"
+    "/home/pi/my_matrix_hal/cpp/driver/direction_of_arrival_music.h"
+    "/home/pi/my_matrix_hal/cpp/driver/uart_control.h"
+    "/home/pi/my_matrix_hal/cpp/driver/audio_output.h"
+    "/home/pi/my_matrix_hal/cpp/driver/zwave_gpio.h"
     )
 endif()
 

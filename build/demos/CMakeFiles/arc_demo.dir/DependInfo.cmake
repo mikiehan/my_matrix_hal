@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/matrix-creator-hal/demos/arc_demo.cpp" "/home/pi/matrix-creator-hal/build/demos/CMakeFiles/arc_demo.dir/arc_demo.cpp.o"
+  "/home/pi/my_matrix_hal/demos/arc_demo.cpp" "/home/pi/my_matrix_hal/build/demos/CMakeFiles/arc_demo.dir/arc_demo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -14,7 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/pi/matrix-creator-hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/DependInfo.cmake"
+  "/home/pi/my_matrix_hal/build/demos/driver/CMakeFiles/matrix_creator_hal.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

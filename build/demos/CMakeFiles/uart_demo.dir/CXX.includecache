@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/matrix-creator-hal/cpp/driver/././matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/././matrixio_bus.h
 stdint.h
 -
 mutex
@@ -14,9 +14,9 @@ mutex
 string
 -
 ./bus.h
-/home/pi/matrix-creator-hal/cpp/driver/./././bus.h
+/home/pi/my_matrix_hal/cpp/driver/./././bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/./bus.h
+/home/pi/my_matrix_hal/cpp/driver/./bus.h
 stdint.h
 -
 mutex
@@ -24,15 +24,15 @@ mutex
 string
 -
 
-/home/pi/matrix-creator-hal/cpp/driver/./matrix_driver.h
+/home/pi/my_matrix_hal/cpp/driver/./matrix_driver.h
 memory
 -
 string
 -
 ./matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/././matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/././matrixio_bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/matrixio_bus.h
 stdint.h
 -
 mutex
@@ -40,17 +40,17 @@ mutex
 string
 -
 ./bus.h
-/home/pi/matrix-creator-hal/cpp/driver/./bus.h
+/home/pi/my_matrix_hal/cpp/driver/./bus.h
 
-/home/pi/matrix-creator-hal/cpp/driver/uart_control.h
+/home/pi/my_matrix_hal/cpp/driver/uart_control.h
 cstdint
 -
 vector
 -
 ./matrix_driver.h
-/home/pi/matrix-creator-hal/cpp/driver/./matrix_driver.h
+/home/pi/my_matrix_hal/cpp/driver/./matrix_driver.h
 
-/home/pi/matrix-creator-hal/demos/uart_demo.cpp
+/home/pi/my_matrix_hal/demos/uart_demo.cpp
 wiringPi.h
 -
 fstream
@@ -62,7 +62,7 @@ string
 valarray
 -
 ../cpp/driver/matrixio_bus.h
-/home/pi/matrix-creator-hal/cpp/driver/matrixio_bus.h
+/home/pi/my_matrix_hal/cpp/driver/matrixio_bus.h
 ../cpp/driver/uart_control.h
-/home/pi/matrix-creator-hal/cpp/driver/uart_control.h
+/home/pi/my_matrix_hal/cpp/driver/uart_control.h
 
