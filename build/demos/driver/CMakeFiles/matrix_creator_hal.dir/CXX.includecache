@@ -58,10 +58,6 @@ valarray
 
 ../cpp/driver/../../cpp/driver/./pressure_data.h
 
-../cpp/driver/../../cpp/driver/creator_memory_map.h
-string
--
-
 ../cpp/driver/../../cpp/driver/cross_correlation.h
 fftw3.h
 -
@@ -127,34 +123,6 @@ cpp/driver/microphone_array.h
 /home/pi/my_matrix_hal/cpp/driver/cpp/driver/microphone_array.h
 cpp/driver/direction_of_arrival_music.h
 /home/pi/my_matrix_hal/cpp/driver/cpp/driver/direction_of_arrival_music.h
-cpp/driver/microphone_array_location.h
-/home/pi/my_matrix_hal/cpp/driver/cpp/driver/microphone_array_location.h
-
-/home/pi/my_matrix_hal/cpp/driver/microphone_array.cpp
-wiringPi.h
--
-cmath
--
-condition_variable
--
-cstdint
--
-cstdlib
--
-fstream
--
-iostream
--
-map
--
-string
--
-valarray
--
-cpp/driver/creator_memory_map.h
-/home/pi/my_matrix_hal/cpp/driver/cpp/driver/creator_memory_map.h
-cpp/driver/microphone_array.h
-/home/pi/my_matrix_hal/cpp/driver/cpp/driver/microphone_array.h
 cpp/driver/microphone_array_location.h
 /home/pi/my_matrix_hal/cpp/driver/cpp/driver/microphone_array_location.h
 

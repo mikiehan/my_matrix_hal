@@ -150,7 +150,7 @@ void DirectionOfArrivalMusic::Calculate() {
         
         cout << "****** outMatrix ***** " << endl;
         for (int k = 0; k < outMatrix.rows() ; k++) {
-            for (int l = 0 ; l < outMatrix.col(); l++) {
+            for (int l = 0 ; l < outMatrix.cols(); l++) {
                 cout << outMatrix(k, l) << " ";
             }
             cout << endl;
