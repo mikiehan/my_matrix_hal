@@ -67,29 +67,32 @@ int main(int argc, char *agrv[]) {
     os[c].open(filename, std::ofstream::binary);
   }
 
-  std::thread et(
-      [seconds_to_record](hal::MatrixIOBus *bus) {
+//  disable lighting start (no need for light)
+//  std::thread et(
+//      [seconds_to_record](hal::MatrixIOBus *bus) {
+//
+//        hal::Everloop everloop;
+//        everloop.Setup(bus);
+//
+//        hal::EverloopImage image(bus->MatrixLeds());
+//
+//        for (auto &led : image.leds) led.red = 10;
+//        everloop.Write(&image);
+//
+//        int sleep = int(1000.0 * seconds_to_record / image.leds.size());
+//
+//        for (auto &led : image.leds) {
+//          led.red = 0;
+//          led.green = 10;
+//
+//          everloop.Write(&image);
+//
+//          std::this_thread::sleep_for(std::chrono::milliseconds(sleep));
+//        }
+//      },
+//      &bus);
+//  disable lighting end (no need for light)
 
-        hal::Everloop everloop;
-        everloop.Setup(bus);
-
-        hal::EverloopImage image(bus->MatrixLeds());
-
-        for (auto &led : image.leds) led.red = 10;
-        everloop.Write(&image);
-
-        int sleep = int(1000.0 * seconds_to_record / image.leds.size());
-
-        for (auto &led : image.leds) {
-          led.red = 0;
-          led.green = 10;
-
-          everloop.Write(&image);
-
-          std::this_thread::sleep_for(std::chrono::milliseconds(sleep));
-        }
-      },
-      &bus);
 
   uint32_t samples = 0;
   for (int s = 0; s < seconds_to_record; s++) {
@@ -115,6 +118,6 @@ int main(int argc, char *agrv[]) {
     }
   }
 
-  et.join();
+  //et.join();
   return 0;
 }
