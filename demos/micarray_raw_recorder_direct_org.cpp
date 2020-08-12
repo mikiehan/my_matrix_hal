@@ -23,6 +23,7 @@
 DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
 DEFINE_int32(duration, 5, "Interrupt after N seconds");
 DEFINE_int32(gain, -1, "Microphone Gain");
+DEFINE_string(prefix, "prefix", "Prefix for Filename");
 
 namespace hal = matrix_hal;
 
@@ -40,6 +41,7 @@ int main(int argc, char *agrv[]) {
 
   int sampling_rate = FLAGS_sampling_frequency;
   int seconds_to_record = FLAGS_duration;
+  std::string prefix = FLAGS_prefix;
 
   // Microhone Array Configuration
   hal::MicrophoneArray mics(false); //disable beamforming
@@ -60,7 +62,7 @@ int main(int argc, char *agrv[]) {
   std::ofstream os[mics.Channels()];
 
   for (uint16_t c = 0; c < mics.Channels(); c++) {
-    std::string filename = "mic_" + std::to_string(mics.SamplingRate()) +
+    std::string filename = prefix + "_mic_" + std::to_string(mics.SamplingRate()) +
                            "_raw_s16le_channel_" + std::to_string(c) + ".raw";
     os[c].open(filename, std::ofstream::binary);
   }
